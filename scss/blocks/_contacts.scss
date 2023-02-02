@@ -1,0 +1,58 @@
+.contacts {
+		position: relative;
+	&__container {
+		padding: 50px 15px 110px 15px;
+	}
+
+	&__column {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 16px;
+	}
+
+}
+.decor-contacts{
+	content: '';
+   position: absolute;
+	height: 1px;
+	width: 100%;
+	right: 0%;
+	bottom: 0%;
+	background: #E5E5E5;
+}
+
+
+.item-contacts {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+
+	&__logo {
+		padding-bottom: 15px;
+	}
+
+	&__info-text {
+		max-width: 326px;
+		padding-bottom: 10px;
+	}
+
+	&__title {
+		font-family: $firstFont;
+			font-size: 25px;
+			line-height: 152%;
+			letter-spacing: 0.22px;
+			color: $textColor_2;
+	}
+	&__data {
+		max-width: 321px;
+	}
+}
+
+.social-list-item-contacts {
+   display: flex;
+	justify-content: flex-start;
+	align-items: center;
+   column-gap: 40px;
+	&__link {}
+}

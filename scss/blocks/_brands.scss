@@ -1,0 +1,16 @@
+.brands {
+
+	&__container {
+	}
+
+	&__content {
+			margin: 140px 0px 100px 0px;
+	}
+
+	&__image {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+   gap:30px;
+	}
+}

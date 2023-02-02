@@ -1,0 +1,66 @@
+.reviews {
+
+	&__container {
+		background-color: $textColor_3;
+		border-radius: 70px;
+		padding: 103px 0px 120px 0px;
+	}
+
+	&__body {}
+}
+
+.container {}
+
+.body-reviews {
+
+	&__caption {
+		max-width: 500px;
+		text-align: center;
+		margin: 0px auto;
+		padding-bottom: 45px;
+	}
+
+	&__column {
+		@extend %flex-all-center;
+      gap: 20px;
+	}
+
+	&__item {
+		@extend %flex-text;
+		background: $buttonColor;
+		border-radius: 30px;
+		padding: 50px 30px 45px 35px;
+	}
+
+	&__info-people {}
+
+	&__desc {
+				max-width: 270px;
+	}
+}
+
+.info-people-body-reviews {
+	@extend %flex-start;
+	align-items: center;
+	padding-bottom: 26px;
+
+	&__text{
+	padding-left: 20px;
+}
+	&__icon {
+	}
+
+	&__title {
+			font-size: 24px;
+			line-height: 150%;
+			letter-spacing: 0.22px;
+			color: #4D5053;
+			padding-bottom: 5px;
+	}
+
+	&__desc {
+
+	}
+}
+
+.desc {}

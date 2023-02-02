@@ -1,0 +1,70 @@
+.statistics {
+	background-color: $textColor_3;
+
+	&__container {
+		position: relative;
+		padding: 140px 0px 140px 0px;
+		margin-bottom: 130px;
+	}
+
+	&__content {
+		@extend %flex-all-center;
+		gap: 20px;
+	}
+
+	&__item {}
+
+	&__decor {}
+}
+
+.container {}
+
+.item-statistics {
+	padding: 14px 75px 10px 60px;
+
+	&__value {
+		font-family: $firstFont;
+			font-size: 85px;
+			line-height: 150%;
+			text-align: center;
+			letter-spacing: 1.7px;
+			color: $brown;
+	}
+
+	&__subCaption {}
+}
+
+.subCaption {}
+
+.decor-statistics {
+
+	&_1 {
+		content: '';
+		position: absolute;
+		height: 195px;
+		width: 1px;
+		left: 24%;
+		top: 140px;
+		background: $brown;
+	}
+
+	&_2 {
+				content: '';
+					position: absolute;
+					height: 195px;
+					width: 1px;
+					left: 49.33%;
+					top: 140px;
+					background: $brown;
+	}
+
+	&_3 {
+				content: '';
+					position: absolute;
+					height: 195px;
+					width: 1px;
+					left: 74.67%;
+					top: 140px;
+					background: $brown;
+	}
+}

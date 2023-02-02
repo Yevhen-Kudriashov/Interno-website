@@ -1,0 +1,75 @@
+.about-us {
+	&__container {
+		@extend %flex;
+	}
+	&__content{
+   display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 77px;
+	padding: 40px 0px 170px 0px;
+	}
+
+	&__body {
+	}
+	&__image{
+		position: relative;
+		& img{
+			
+		}
+	}
+
+	&__call {
+		@extend %flex-all-center;
+		gap: 20px;
+		padding-bottom: 50px;
+	}
+
+	&__logo {}
+
+	&__number {
+		max-width: 154px;
+	}
+
+	&__button {
+		position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 82.61%;
+				top: 49.3%;
+				width: 100%;
+				height: 100%;
+				background-image: url(/img/about-us/Vector.svg);
+				background-repeat: no-repeat;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+			left: 88.31%;
+			top: 22.95%;
+				width: 100%;
+				height: 100%;
+				background-image: url(/img/about-us/Vector-1.svg);
+				background-repeat: no-repeat;
+			}
+	}
+}
+
+.container {}
+
+.body-text {
+
+	&__caption {
+		text-align: start;
+		padding-bottom: 42px;
+	}
+
+	&__subCaption {
+				text-align: start;
+				padding-bottom: 30px;
+	}
+}

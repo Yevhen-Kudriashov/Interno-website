@@ -1,0 +1,1234 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&family=Jost&display=swap");
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 20, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 36, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 42, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 46, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_reset.scss */
+a {
+  text-decoration: none; }
+
+/*
+// scrollbar vars
+$btnColor: #331e1e;
+$trackColor: #c49191;
+$scrollWidth: 10px;
+*/
+/* line 6, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.menu__list, .info-text__items, .about-us__container, .recent-project__content, .recent-blogs__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* line 11, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.offer__container, .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 17, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.info-people-body-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+/* line 22, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.create__text, .info-text__item, .body-reviews__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 34, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 42, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_templates.scss */
+.about-us__call, .body-reviews__column, .recent-project__column, .statistics__content, .recent-blogs__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_general.scss */
+html {
+  height: 100%; }
+
+/* line 4, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_general.scss */
+body {
+  height: 100%;
+  font-weight: 400;
+  font-family: "Jost";
+  font-size: 22px;
+  /*
+    @include scrollbars($scrollWidth, $btnColor, $trackColor);
+    */ }
+
+/* line 15, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_general.scss */
+.container {
+  max-width: 1200px; }
+
+/* line 20, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_general.scss */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 27, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_general.scss */
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.mainCaption {
+  font-size: 80px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #292F36; }
+
+/* line 7, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.caption {
+  font-size: 50px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #292F36; }
+
+/* line 11, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.subCaption {
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #4D5053; }
+
+/* line 17, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.desc {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #4D5053; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.button {
+  padding: 22px 67px 22px 35px;
+  background-color: #292F36;
+  color: #FFFFFF;
+  border-radius: 18px;
+  border: 2px solid #292F36;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  /* line 29, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+  .button:hover {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding: 22px 67px 22px 35px;
+    background-color: #d6d6d6;
+    color: #292F36;
+    border-radius: 12px;
+    border: 3px solid #292F36;
+    outline: none; }
+  /* line 33, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+  .button:focus {
+    outline: none; }
+
+/* line 39, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.button-empty {
+  padding: 22px 67px 22px 35px;
+  background-color: transparent;
+  color: #F5F5F5;
+  border-radius: 12px;
+  border: 2px solid #FFFFFF;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  /* line 44, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+  .button-empty:hover {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding: 22px 67px 22px 35px;
+    background-color: #F5F5F5;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid #F5F5F5;
+    outline: none; }
+  /* line 48, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+  .button-empty:focus {
+    outline: none; }
+
+/* line 53, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_classes.scss */
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; }
+  /* line 7, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; }
+  /* line 19, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+  .header__body {
+    min-height: 147px;
+    position: relative;
+    z-index: 2; }
+
+/* line 32, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+.icon-menu {
+  display: none; }
+
+/* line 35, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+.close-icon-menu {
+  display: none; }
+
+/* line 41, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+.menu__list {
+  gap: 40px; }
+
+/* line 46, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_header.scss */
+.menu__link:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: #CDA274;
+  text-decoration: underline; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+/* line 9, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__image {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -120px;
+  top: 0px; }
+
+/* line 18, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__text {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 195px 0px 250px 0px;
+  max-width: 600px; }
+
+/* line 25, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__mainCaption {
+  padding-bottom: 19px;
+  z-index: 2; }
+
+/* line 30, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__subCaption {
+  padding-bottom: 35px;
+  z-index: 2; }
+
+/* line 35, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+.create__button {
+  position: relative; }
+  /* line 37, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+  .create__button::before {
+    content: "";
+    position: absolute;
+    left: 77.78%;
+    top: 49.3%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/create/Vector.svg);
+    background-repeat: no-repeat; }
+  /* line 47, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_create.scss */
+  .create__button::after {
+    content: "";
+    position: absolute;
+    left: 85.02%;
+    top: 22%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/create/Vector-1.svg);
+    background-repeat: no-repeat; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__container {
+  padding: 102px 0px 100px 0px; }
+
+/* line 7, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__item {
+  padding: 75px 41px 50px 41px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto; }
+  /* line 17, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+  .info-text__item:nth-child(2) {
+    margin-bottom: 33px; }
+
+/* line 21, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__title {
+  font-family: "DM+Serif+Display";
+  font-size: 25px;
+  line-height: 156%;
+  text-align: center;
+  letter-spacing: 0.22px;
+  color: #292F36;
+  padding-bottom: 17px; }
+
+/* line 31, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__subCaption {
+  padding-bottom: 48px; }
+
+/* line 34, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text .subCaption__padding {
+  margin-bottom: -33px; }
+
+/* line 38, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_info-text.scss */
+.info-text__buttons {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #4D5053;
+  padding: 20px 90px 20px 70px;
+  background-image: url(/img/create/arrow_button.svg);
+  background-repeat: no-repeat;
+  background-position: 170px; }
+
+/* line 5, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.about-us__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 77px;
+  padding: 40px 0px 170px 0px; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.about-us__image {
+  position: relative; }
+
+/* line 23, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.about-us__call {
+  gap: 20px;
+  padding-bottom: 50px; }
+
+/* line 31, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.about-us__number {
+  max-width: 154px; }
+
+/* line 35, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.about-us__button {
+  position: relative; }
+  /* line 37, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+  .about-us__button::before {
+    content: "";
+    position: absolute;
+    left: 82.61%;
+    top: 49.3%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/about-us/Vector.svg);
+    background-repeat: no-repeat; }
+  /* line 48, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+  .about-us__button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 88.31%;
+    top: 22.95%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/about-us/Vector-1.svg);
+    background-repeat: no-repeat; }
+
+/* line 66, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.body-text__caption {
+  text-align: start;
+  padding-bottom: 42px; }
+
+/* line 71, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_about-us.scss */
+.body-text__subCaption {
+  text-align: start;
+  padding-bottom: 30px; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.reviews__container {
+  background-color: #F4F0EC;
+  border-radius: 70px;
+  padding: 103px 0px 120px 0px; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.body-reviews__caption {
+  max-width: 500px;
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 45px; }
+
+/* line 23, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.body-reviews__column {
+  gap: 20px; }
+
+/* line 28, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.body-reviews__item {
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 50px 30px 45px 35px; }
+
+/* line 37, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.body-reviews__desc {
+  max-width: 270px; }
+
+/* line 42, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+.info-people-body-reviews {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 26px; }
+  /* line 47, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+  .info-people-body-reviews__text {
+    padding-left: 20px; }
+  /* line 53, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_reviews.scss */
+  .info-people-body-reviews__title {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    color: #4D5053;
+    padding-bottom: 5px; }
+
+/* line 6, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_brands.scss */
+.brands__content {
+  margin: 140px 0px 100px 0px; }
+
+/* line 10, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_brands.scss */
+.brands__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__container {
+  padding: 14px 15px 60px 15px;
+  margin-bottom: 80px; }
+
+/* line 8, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__body {
+  text-align: center; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__column {
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 60px; }
+
+/* line 18, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%; }
+
+/* line 22, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__img {
+  padding-bottom: 24px; }
+  /* line 24, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+  .recent-project__img img {
+    width: 100%; }
+
+/* line 36, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.recent-project__title {
+  font-family: "DM+Serif+Display";
+  font-size: 24px;
+  line-height: 158%;
+  letter-spacing: 0.22px;
+  color: #292F36;
+  padding-bottom: 5px; }
+
+/* line 55, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.body-text__caption {
+  padding-bottom: 20px; }
+
+/* line 59, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.body-text__subCaption {
+  max-width: 786px;
+  margin: 0px auto;
+  padding-bottom: 70px; }
+
+/* line 70, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.buttons-recent-project {
+  cursor: pointer; }
+
+/* line 77, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-project.scss */
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 70px;
+  background: #F4F0EC;
+  border-radius: 100px;
+  text-align: center; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+.statistics {
+  background-color: #F4F0EC; }
+  /* line 4, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+  .statistics__container {
+    position: relative;
+    padding: 140px 0px 140px 0px;
+    margin-bottom: 130px; }
+  /* line 10, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+  .statistics__content {
+    gap: 20px; }
+
+/* line 22, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+.item-statistics {
+  padding: 14px 75px 10px 60px; }
+  /* line 25, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+  .item-statistics__value {
+    font-family: "DM+Serif+Display";
+    font-size: 85px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1.7px;
+    color: #CDA274; }
+
+/* line 41, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+.decor-statistics_1 {
+  content: '';
+  position: absolute;
+  height: 195px;
+  width: 1px;
+  left: 24%;
+  top: 140px;
+  background: #CDA274; }
+
+/* line 51, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+.decor-statistics_2 {
+  content: '';
+  position: absolute;
+  height: 195px;
+  width: 1px;
+  left: 49.33%;
+  top: 140px;
+  background: #CDA274; }
+
+/* line 61, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_statistics.scss */
+.decor-statistics_3 {
+  content: '';
+  position: absolute;
+  height: 195px;
+  width: 1px;
+  left: 74.67%;
+  top: 140px;
+  background: #CDA274; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__container {
+  padding: 15px 15px 40px 15px;
+  margin-bottom: 100px; }
+
+/* line 8, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__body {
+  padding-bottom: 70px; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__column {
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 30px;
+  width: 100%; }
+
+/* line 19, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__item {
+  padding: 21px 18px 40px 18px;
+  border: 1px solid #E7E7E7;
+  border-radius: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 27, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__img {
+  position: relative; }
+  /* line 29, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+  .recent-blogs__img img {
+    width: 100%; }
+
+/* line 36, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__button {
+  content: '';
+  position: absolute;
+  width: 139px;
+  height: 44px;
+  left: 7%;
+  top: 75%;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  color: #4D5053;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 54, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 61, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__title {
+  font-family: "DM+Serif+Display";
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+  color: #292F36;
+  max-width: 338px;
+  padding: 15px 0px 10px 0px; }
+
+/* line 71, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__subtitle {
+  font-family: "Jost";
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+  color: #4D5053; }
+
+/* line 79, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.recent-blogs__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 89, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.body-text {
+  text-align: center; }
+
+/* line 101, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_recent-blogs.scss */
+.buttons-recent-blogs {
+  cursor: pointer; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+.offer__container {
+  padding: 100px 0px 95px 0px;
+  background-color: #292F36;
+  border-radius: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 80px; }
+
+/* line 14, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+.offer__button {
+  position: relative;
+  background-color: #CDA274; }
+  /* line 17, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+  .offer__button::before {
+    content: "";
+    position: absolute;
+    left: 83.4%;
+    top: 52.66%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/offer/Vector.svg);
+    background-repeat: no-repeat; }
+  /* line 28, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+  .offer__button::after {
+    content: "";
+    position: absolute;
+    left: 89.21%;
+    top: 24%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/offer/Vector-1.svg);
+    background-repeat: no-repeat; }
+
+/* line 45, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+.body-text__caption_white {
+  color: #FFFFFF;
+  padding-bottom: 9px; }
+
+/* line 50, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_offer.scss */
+.body-text__subCaption_white {
+  color: #FFFFFF;
+  padding-bottom: 31px; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+.contacts {
+  position: relative; }
+  /* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .contacts__container {
+    padding: 50px 15px 110px 15px; }
+  /* line 7, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .contacts__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 16px; }
+
+/* line 15, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+.decor-contacts {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0%;
+  bottom: 0%;
+  background: #E5E5E5; }
+
+/* line 26, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+.item-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px; }
+  /* line 31, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .item-contacts__logo {
+    padding-bottom: 15px; }
+  /* line 35, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .item-contacts__info-text {
+    max-width: 326px;
+    padding-bottom: 10px; }
+  /* line 40, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .item-contacts__title {
+    font-family: "DM+Serif+Display";
+    font-size: 25px;
+    line-height: 152%;
+    letter-spacing: 0.22px;
+    color: #292F36; }
+  /* line 47, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+  .item-contacts__data {
+    max-width: 321px; }
+
+/* line 52, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_contacts.scss */
+.social-list-item-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px; }
+
+/* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_footer.scss */
+.footer__container {
+  padding: 35px 0px;
+  min-height: 104px; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_footer.scss */
+.footer__title {
+  padding-right: 10px; }
+
+/* line 17, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/blocks/_footer.scss */
+.footer__text span {
+  color: #CDA274; }
+
+@media only screen and (max-width: 1230px) {
+  /* line 3, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .decor-statistics_1 {
+    display: none; }
+  /* line 6, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .decor-statistics_2 {
+    display: none; }
+  /* line 9, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .decor-statistics_3 {
+    display: none; } }
+
+@media only screen and (max-width: 991.98px) {
+  /* line 18, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .recent-project__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%; }
+  /* line 23, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text__item {
+    padding: 40px 25px 25px 25px; }
+  /* line 28, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .about-us__container {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse; }
+  /* line 31, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .about-us__image {
+    margin: -30px auto 0px auto; }
+  /* line 34, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .about-us__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+    padding: 30px 0px 60px 0px; }
+  /* line 43, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__caption {
+    padding-bottom: 30px;
+    font-size: 40px; }
+  /* line 48, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__subCaption {
+    padding-bottom: 20px; }
+  /* line 54, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-reviews__caption {
+    font-size: 40px; }
+  /* line 59, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .brands__content {
+    margin: 100px 0px 80px 0px; }
+  /* line 62, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .brands__image {
+    gap: 10px; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 73, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .about-us__image img {
+    width: 100%; }
+  /* line 79, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .create__mainCaption {
+    font-size: 50px; }
+  /* line 84, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text__container {
+    padding: 90px 0px 50px 0px; }
+  /* line 87, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  /* line 90, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text__subCaption {
+    padding-bottom: 10px; }
+  /* line 93, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text .subCaption__padding {
+    margin-bottom: 0px; }
+  /* line 96, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .info-text__item {
+    padding: 15px 25px; }
+  /* line 101, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__caption {
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500; }
+  /* line 107, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__subCaption {
+    padding-bottom: 30px; }
+  /* line 112, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .reviews__container {
+    padding: 80px 0px 100px 0px; }
+  /* line 117, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .brands__content {
+    margin: 60px 0px 40px 0px; }
+  /* line 121, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .brands__image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 70px; }
+  /* line 127, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .statistics__container {
+    padding: 60px 0px 60px 0px;
+    margin-bottom: 20px; }
+  /* line 131, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .statistics__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  /* line 136, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .recent-blogs__container {
+    margin-bottom: 10px; }
+  /* line 139, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .recent-blogs__body {
+    padding-bottom: 20px; }
+  /* line 144, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__caption_white {
+    font-size: 40px; }
+  /* line 150, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .footer__container {
+    padding: 25px 10px;
+    min-height: 80px; }
+  /* line 155, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .footer__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 10px; } }
+
+@media only screen and (max-width: 479.98px) {
+  /* line 164, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .create__mainCaption {
+    font-size: 40px; }
+  /* line 167, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .create__image {
+    left: -350px; }
+  /* line 173, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-reviews__caption {
+    font-size: 30px; }
+  /* line 178, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .reviews__container {
+    padding: 60px 10px 80px 10px; }
+  /* line 183, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .body-text__caption_white {
+    font-size: 30px; }
+  /* line 188, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .offer__container {
+    padding: 70px 0px 65px 0px;
+    margin-bottom: 10px; } }
+
+@media only screen and (max-width: 991.98px) {
+  /* line 201, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .contacts__container {
+    padding: 0px 15px 60px 15px;
+    margin-top: -50px; }
+  /* line 205, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .contacts__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 212, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__info-text {
+    max-width: 100%; }
+  /* line 215, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__title {
+    min-width: 310px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 0px 100px 0px 0px;
+    margin: 80px 0px -40px 0px;
+    cursor: pointer; }
+    /* line 223, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title::before, .item-contacts__title::after {
+      content: '';
+      width: 10px;
+      height: 1px;
+      background-color: #000000;
+      position: absolute;
+      top: 19px;
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+    /* line 233, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title::before {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+      right: 0px; }
+    /* line 237, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title::after {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      right: 8px; }
+    /* line 241, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title.active::before, .item-contacts__title.active::after {
+      background-color: #CDA274; }
+    /* line 245, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title.active::before {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg); }
+    /* line 248, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title.active::after {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg); }
+    /* line 251, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .item-contacts__title:not(:last-child) {
+      padding-bottom: 40px; }
+  /* line 255, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__link {
+    font-size: 25px;
+    letter-spacing: 3px; }
+  /* line 259, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__data {
+    font-size: 25px;
+    letter-spacing: 3px; }
+  /* line 263, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__email {
+    font-size: 25px;
+    letter-spacing: 3px; }
+  /* line 267, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__number {
+    font-size: 25px;
+    letter-spacing: 3px; }
+  /* line 271, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .item-contacts__info {
+    margin-top: 120px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 276, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .social-list-item-contacts {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 286, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .header__body {
+    min-height: 90px; }
+  /* line 290, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  body.lock {
+    overflow: hidden; }
+  /* line 293, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    padding: 170px 15px 30px 15px;
+    -webkit-transition: left .2s ease 0s;
+    transition: left .2s ease 0s;
+    z-index: 3; }
+  /* line 306, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .header:target .menu__body {
+    left: 0; }
+  /* line 310, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .header:target .menu__body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff; }
+  /* line 320, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 326, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .menu__link {
+    font-size: 35px;
+    font-weight: 500; }
+  /* line 331, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .menu__item:not(:last-child) {
+    padding-bottom: 50px; }
+  /* line 335, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .close-icon-menu,
+  .icon-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    height: 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px 20px 0px 10px; }
+  /* line 346, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    background-color: #000000;
+    height: 2px; }
+  /* line 353, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .icon-menu span {
+    height: 2px;
+    background-color: #000000; }
+  /* line 359, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .close-icon-menu {
+    display: none;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    height: 30px;
+    position: relative;
+    margin: 0px 20px 0px 20px;
+    z-index: 3; }
+    /* line 366, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .close-icon-menu::before, .close-icon-menu::after {
+      content: "";
+      background-color: #000000;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 1; }
+    /* line 377, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .close-icon-menu::before {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    /* line 380, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+    .close-icon-menu::after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  /* line 384, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .header:target .icon-menu {
+    display: none; }
+  /* line 387, ../../../../Desktop/AZGAR/Practic/2022/Interno/scss/common/_media.scss */
+  .header:target .close-icon-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }

@@ -1,0 +1,86 @@
+.recent-project {
+
+	&__container {
+		padding: 14px 15px 60px 15px;
+		margin-bottom: 80px;
+	}
+
+	&__body {
+		text-align: center;
+	}
+
+	&__column {
+		@extend %flex-all-center;
+		column-gap: 20px;
+		row-gap: 60px;
+	}
+
+	&__item {
+		flex: 0 0 40%;
+	}
+
+	&__img {
+		padding-bottom: 24px;
+		& img{
+			width: 100%
+
+		}
+	}
+
+	&__content {
+		@extend %flex;
+	}
+
+	&__text {}
+
+	&__title {
+		font-family:$firstFont;
+			font-size: 24px;
+			line-height: 158%;
+			letter-spacing: 0.22px;
+			color: $textColor_2;
+			padding-bottom: 5px;
+	}
+
+	&__subCaption {
+	}
+
+	&__buttons {
+
+	}
+}
+
+.body-text {
+
+	&__caption {
+		padding-bottom: 20px ;
+	}
+
+	&__subCaption {
+		max-width: 786px;
+      margin: 0px auto; 
+		padding-bottom: 70px;
+	}
+}
+
+.caption {}
+
+.subCaption {}
+
+.buttons-recent-project{
+	cursor: pointer;
+}
+
+.buttons-recent-project {
+
+}
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	background: #F4F0EC;
+	border-radius: 100px;
+	text-align: center;
+}

@@ -1,0 +1,51 @@
+.info-text {
+
+	&__container {
+		padding: 102px 0px 100px 0px;
+	}
+
+	&__items {
+   @extend %flex;
+	align-items: center;
+	}
+
+	&__item {
+		padding: 75px 41px 50px 41px;
+			@extend %flex-text;
+			align-items: center;
+			margin: 0px auto;
+			&:nth-child(2){
+				margin-bottom: 33px;
+			}
+	}
+	&__title {
+		font-family:$firstFont;
+			font-size: 25px;
+			line-height: 156%;
+			text-align: center;
+			letter-spacing: 0.22px;
+			color: $textColor_2;
+		   padding-bottom: 17px;
+	}
+
+	&__subCaption {
+		padding-bottom: 48px;
+	}
+		.subCaption__padding {
+			margin-bottom: -33px;
+		}
+
+	&__buttons {
+   font-family: $mainFont;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.36px;
+	color: $textColor;
+	padding: 20px 90px 20px 70px;
+	background-image: url(/img/create/arrow_button.svg);
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+}

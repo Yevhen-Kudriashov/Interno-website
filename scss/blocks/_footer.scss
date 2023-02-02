@@ -1,0 +1,23 @@
+.footer {
+
+    &__container {
+        padding: 35px 0px;
+        min-height: 104px;
+    }
+
+    &__content {
+    @extend %flex-center-nowrap;
+    }
+
+    &__title {
+        padding-right: 10px;
+    }
+
+    &__text {
+        & span{
+            color: $brown;
+        }
+    }
+}
+
+.container {}

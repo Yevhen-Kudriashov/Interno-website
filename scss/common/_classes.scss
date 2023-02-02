@@ -1,0 +1,59 @@
+// main caption styles
+.mainCaption {
+    // font size, line height, font weight, color 
+    @include textStyles(80px, 120%, 400, $textColor_2);
+}
+
+.caption{
+    @include textStyles(50px, 120%, 400, $textColor_2);
+}
+// sub caption styles
+.subCaption {
+    // font size, line height, font weight, color 
+    @include textStyles(22px, 150%, 400, $textColor);
+}
+
+// description styles
+.desc {
+    // font size, line height, font weight, color 
+    @include textStyles(20px, 150%, 400, $textColor);
+}
+
+
+// button styles 
+.button {
+    // padding top bottom, padding left right, background-color, color, border-radius, borderSize, borderStyle, borderColor
+    @include button(22px, 67px, 22px, 35px, $textColor_2, $buttonColor, 18px, 2px, solid, $textColor_2);
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        transition: $transition;
+        @include button(22px, 67px, 22px, 35px , $textColor_4, $textColor_2, 12px, 3px, solid, $textColor_2);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+
+.button-empty{
+    // padding top bottom, padding left right, background-color, color, border-radius, borderSize, borderStyle, borderColor
+    @include button(22px, 67px, 22px, 35px, transparent, $mainColor, 12px, 2px, solid, $buttonColor);
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        transition: $transition;
+        @include button(22px, 67px, 22px, 35px, $mainColor, white, 12px, 2px, solid, $mainColor);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.container{
+    max-width:$container;
+    padding: 0 ($paddingContainer / 2 + px);
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}

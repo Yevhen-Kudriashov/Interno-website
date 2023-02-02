@@ -1,0 +1,60 @@
+.create {
+
+	&__container {
+   position: relative;
+	width: 100%;
+	height: 100%;
+	}
+
+	&__image {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: -120px;
+		top: 0px;
+	}
+
+	&__text {
+		@extend %flex-text;
+		align-items: flex-start;
+		padding: 195px 0px 250px 0px;
+		max-width: 600px;
+	}
+
+	&__mainCaption {
+	padding-bottom: 19px;
+	z-index: 2;
+	}
+
+	&__subCaption {
+	padding-bottom: 35px;
+		z-index: 2;
+	}
+
+	&__button {
+		position: relative;
+		&::before{
+		content: "";
+		position: absolute;
+      left: 77.78%;
+      top: 49.3%;
+		width: 100%;
+		height: 100%;
+		background-image: url(/img/create/Vector.svg);
+		background-repeat: no-repeat;
+		}
+		&::after {
+		content: "";
+		position: absolute;
+		left: 85.02%;
+		top: 22%;
+		width: 100%;
+		height: 100%;
+		background-image: url(/img/create/Vector-1.svg);
+		background-repeat: no-repeat;
+		}
+	}
+}
+
+.container {}
